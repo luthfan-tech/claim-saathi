@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ClaimSaathi — student prototype</title>
+    <meta
+      name="description"
+      content="Student prototype for practising medical and duty-travel expense claims. Fictional data only."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">CS</span>
+          <span class="brand-text">
+            <strong>ClaimSaathi</strong>
+            <span class="brand-sub">Expense claim practice tool</span>
+          </span>
+        </div>
+        <div class="text-size" role="group" aria-label="Text size">
+          <span class="text-size-label">Text size</span>
+          <button
+            type="button"
+            id="font-smaller"
+            class="btn btn-quiet btn-small"
+            aria-label="Smaller text"
+          >
+            A&minus;
+          </button>
+          <button
+            type="button"
+            id="font-reset"
+            class="btn btn-quiet btn-small"
+            aria-label="Default text size"
+          >
+            A
+          </button>
+          <button
+            type="button"
+            id="font-larger"
+            class="btn btn-quiet btn-small"
+            aria-label="Larger text"
+          >
+            A+
+          </button>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <p id="mode-banner" class="mode-banner"></p>
+      </div>
+
+      <nav class="main-nav" aria-label="Main">
+        <div class="wrap nav-inner">
+          <a href="#/home" data-route="home">Home</a>
+          <a href="#/add" data-route="add">Add an Expense</a>
+          <a href="#/claims" data-route="claims">My Claims</a>
+          <a href="#/help" data-route="help">Help</a>
+        </div>
+        <div class="wrap nav-inner nav-reviewer">
+          <span class="nav-label">Demonstration only:</span>
+          <a href="#/review" data-route="review">Reviewer Demo</a>
+        </div>
+      </nav>
+    </header>
+
+    <p class="prototype-notice" role="note">
+      Student prototype — fictional data only — no official claims or payments.
+    </p>
+
+    <main id="main" class="wrap" tabindex="-1">
+      <div id="view"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          ClaimSaathi is an educational prototype built by students. It is not
+          an official government portal and is not endorsed by any department.
+        </p>
+        <p>
+          Do not enter real medical records, bank details, identity numbers,
+          police credentials or operational information.
+        </p>
+      </div>
+    </footer>
+
+    <div id="live" class="sr-only" role="status" aria-live="polite"></div>
+    <div id="alert" class="sr-only" role="alert" aria-live="assertive"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
